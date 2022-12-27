@@ -6,6 +6,7 @@ import Contact from './Contact';
 import Products from './Products';
 import Cart from './Cart'
 import SingleProduct from './SingleProduct'
+import Header from "./components/Header";
 import { ThemeProvider } from "styled-components";
 import {GlobalStyle} from './GlobalStyle'
 const App = () => {
@@ -40,6 +41,7 @@ const App = () => {
     <ThemeProvider theme = {theme} >
   <Router>
     <GlobalStyle/>
+    <Header/>
     <Routes>
       <Route path = '/' element = {<Home/>} />
       <Route path = '/about' element = {<About/>} />
