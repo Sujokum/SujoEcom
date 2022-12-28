@@ -36,6 +36,7 @@ const Navbar = () => {
             <li>
               <NavLink className={'cart'} to={'/cart'}>
               <AiOutlineShoppingCart/>
+              <span className='cart-items'>0</span>
               </NavLink>
             </li>
         </ul>
@@ -81,6 +82,12 @@ width: 30%;
 }
 .cart{
   font-size: 2.5rem;
+}
+.cart-items{
+  font-size: 1.8rem;
+  color: red;
+  position: relative;
+  top: -40%;
 }
 `
 
