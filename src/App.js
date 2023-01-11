@@ -2,6 +2,8 @@ import React from "react";
 import {BrowserRouter  as Router , Routes , Route} from 'react-router-dom';
 import Home from './Home';
 import About from './About'
+import Footer from "./components/Footer";
+import ErrorPage from './ErrorPage'
 import Contact from './Contact';
 import Products from './Products';
 import Cart from './Cart'
@@ -48,8 +50,10 @@ const App = () => {
       <Route path = '/contact' element = {<Contact/>} />
       <Route path = '/product' element = {<Products/>} />
       <Route path = '/cart' element = {<Cart/>} />
-      <Route path = '/single/:id' element = {<SingleProduct/>} />
+      <Route path = '/singleproduct/:id' element = {<SingleProduct/>} />
+      <Route path = '*' element = {<ErrorPage/>} />
     </Routes>
+    <Footer/>
   </Router>
     </ThemeProvider>
   )

@@ -8,7 +8,9 @@ const Header = () => {
   return (
     <MainHeader>
       <NavLink to="/">
-        <img src="./images/logo.png" alt="my logo img" />
+        {/* <img src="./images/logo.png" alt="my logo img" /> */}
+
+        <h2 style = {{fontSize : '4rem'}} > <span style = {{color : 'red' , fontSize : '8rem'}} >S</span>ujo <span style = {{color : 'red' , fontSize : '8rem'}} >S</span>tore</h2>
       </NavLink>
       <Navbar />
     </MainHeader>
