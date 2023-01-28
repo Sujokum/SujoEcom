@@ -9,6 +9,8 @@ import Star from './components/Star'
 import FormatedPrice from './helper/FormatedPrice'
 import { TbTruckDelivery, TbReplace } from "react-icons/tb";
 import { MdSecurity } from "react-icons/md";
+import AddToCart from './components/AddToCart';
+
 const API = `https://api.pujakaitem.com/api/products`;
 const SingleProduct = ()=>{
   const {id} = useParams();
@@ -91,6 +93,8 @@ if(isSingleLoading){
            Brand :<span> {company} </span>
          </p>
        </div>
+       <hr/>
+       {stock > 0 && <AddToCart product = {singleProduct} /> }
      </div>
    </div>
  </Container>
